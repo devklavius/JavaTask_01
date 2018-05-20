@@ -1,0 +1,97 @@
+public class Zadanie_2 {
+    public static void main(String args[]) {
+        int a = 4;
+        int b = 1;
+        int c = 3;
+        int d = 5;
+        
+        int min = a;
+        int max = a;
+        
+        if(a > b)
+        {
+            if( a > c)
+            {
+                if(a < d)
+                {
+                    max = d;
+                }
+            }
+            else
+            {
+                max = c;
+                if( c < d)
+                {
+                    max = d;
+                }
+            }
+        }
+        else
+        {
+            max = b;
+            if( b > c)
+            {
+                if(b < d)
+                {
+                    max = d;
+                }
+            }
+            else
+            {
+                max = c;
+                if(c<d)
+                {
+                  max = d;
+                }
+            }
+            
+        }
+        
+        
+        
+        if( a > b)
+        {
+            min = b;
+            if( b > c)
+            {
+                min  = c;
+                
+                if(c > d)
+                {
+                   min = d;
+                }
+            }
+            else
+            {
+                if(b > d)
+                {
+                    min = d;
+                }
+            }
+            
+        }
+        else
+        {
+            if(a > c)
+            {
+               min = c;
+               if(c > d)
+               {
+                  min = d;
+               }
+            }
+            else
+            {
+                min = a;
+                if(a > d)
+                {
+                    min = d;
+                }
+            }
+            
+        }
+        
+        System.out.println("min = " + min);
+        System.out.println("max = " + max);
+    }
+}

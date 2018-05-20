@@ -1,0 +1,22 @@
+public class Zadanie_3 {
+    public static void main(String args[]) {
+        double wz = 177;
+        double wg = 100;
+        double BMI = ((wg*6888) / (wz*wz));
+		
+        System.out.println("BMI = " + BMI);
+		
+		if(BMI >= 18.5 && BMI <= 24.9)
+		{
+			System.out.println("Waga prawidlowa");
+		}
+		else if( BMI > 24.9)
+		{
+			System.out.println("nadwaga");
+		}
+		else
+		{
+			System.out.println("niedowaga");
+		}
+    }
+}
