@@ -1,0 +1,10 @@
+public class Zadanie_1 {
+    public static void main(String args[]) {
+        float F = 1.8f;
+        float C = 37.77778f;
+        float p = (F * C) + 32;
+
+
+        System.out.println("Fahrenheit = " + p);
+    }
+}
