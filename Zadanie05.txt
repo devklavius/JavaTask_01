@@ -1,0 +1,15 @@
+public class Zadanie_5 {
+    public static void main(String args[]) {
+      int rows = 4;
+      
+      for(int i = 1;i<=rows;i++)
+      {
+            for(int l = 1; l <= i; l++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+      }
+       
+    }
+}

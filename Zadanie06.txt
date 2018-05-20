@@ -1,0 +1,48 @@
+
+import java.util.Random;
+
+public class Zadanie_6 {
+    
+    public static void main(String args[]) {
+      int[] tab = new int[10];
+      int sumtab = 0;
+      float avg;
+      int lessavg = 0;
+      int moreavg = 0;
+      Random r = new Random();
+      
+      for(int i=0; i<tab.length; i++)
+      {
+            tab[i]=r.nextInt((20)+2)-10;
+            sumtab += tab[i];
+      }
+      
+      //print elements on screen       
+      for(int i=0; i<tab.length; i++)
+            System.out.print(tab[i]+" "); 
+            
+      System.out.println();  
+      avg = sumtab / tab.length;
+      System.out.println("AVG:" + avg); 
+      
+      for(int i=0; i<tab.length; i++)
+      {
+         if( tab[i] > avg)
+         {
+             moreavg++;
+         }
+         else
+         {
+             lessavg++;
+         }
+      }
+      
+      System.out.println("More AVG:" + moreavg);
+      System.out.println("Less AVG:" + lessavg);
+      
+      for(int i=tab.length-1; i >= 0; i--)
+            System.out.print(tab[i]+" "); 
+      
+            
+    }
+}
